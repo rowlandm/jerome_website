@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    
+    
+	<head>    
+		
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+	</head>
+
+<style>
+
+img.screen{
+    height:800px;
+    width:800px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+div.slide { position:relative; height:800px;}
+</style>
+
+<script>
+$(document).ready(function() {
+
+    $('#main_slider').bxSlider({
+        auto: true,
+        pager: false,
+        pause: 2000,
+        easing: 'easeInOutExpo'
+    });
+
+
+
+document.onkeypress=function(e){
+    //do the required work
+    alert('This is what I have chosen!');
+}
+
+});
+
+</script>
+	<body>
+
+
+            <div id="main_slider">
+                 <div class="slide odd">
+                    <div class="content">
+                        <img class="screen" src="drink.png">
+                    </div>
+                </div>
+                <div class="slide odd">
+                    <div class="content">
+                        <img class="screen" src="food.png">
+                    </div>
+                </div>
+                <div class="slide even">
+                    <div class="content">
+                        <img class="screen" src="finish.png">
+                    </div>
+                </div>
+                <div class="slide even">
+                    <div class="content">
+                        <img class="screen" src="bottle.png">
+                    </div>
+                </div>
+                <div class="slide even">
+                    <div class="content">
+                        <img class="screen" src="book.png">
+                    </div>
+                </div>
+            </div>
+     
+	</body>
+</html>    
